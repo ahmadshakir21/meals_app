@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meals_app/category_meals_screen.dart';
 import 'package:meals_app/category_screen.dart';
 
 void main() {
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
           //           fontFamily: GoogleFonts.robotoCondensed().fontFamily)),
           ),
       home: const CategoryScreen(),
+      routes: {"/category-meals-screen": (context) => CategoryMealsScreen()},
     );
   }
 }
