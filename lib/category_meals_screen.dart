@@ -7,6 +7,8 @@ class CategoryMealsScreen extends StatelessWidget {
 
   // CategoryMealsScreen({required this.categoryId, required this.categoryTitle});
 
+  static const namedRoute = "/category-meals-screen";
+
   @override
   Widget build(BuildContext context) {
     final routeArgs =
@@ -15,6 +17,9 @@ class CategoryMealsScreen extends StatelessWidget {
     final categoryTitle = routeArgs['title'];
     return Scaffold(
       appBar: AppBar(title: Text(categoryTitle!)),
+      // body: ListView.builder(
+      //   itemBuilder: (context, index) {},
+      // ),
     );
   }
 }

@@ -24,8 +24,12 @@ class MyApp extends StatelessWidget {
           //           fontSize: 24,
           //           fontFamily: GoogleFonts.robotoCondensed().fontFamily)),
           ),
-      home: const CategoryScreen(),
-      routes: {"/category-meals-screen": (context) => CategoryMealsScreen()},
+      // home: const CategoryScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const CategoryScreen(),
+        CategoryMealsScreen.namedRoute: (context) => CategoryMealsScreen()
+      },
     );
   }
 }

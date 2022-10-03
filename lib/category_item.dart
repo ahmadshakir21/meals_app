@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meals_app/category_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
   final String id;
@@ -9,7 +10,7 @@ class CategoryItem extends StatelessWidget {
   CategoryItem({required this.id, required this.title, required this.color});
 
   void selectCategory(BuildContext ctx) {
-    Navigator.of(ctx).pushNamed("/category-meals-screen",
+    Navigator.of(ctx).pushNamed(CategoryMealsScreen.namedRoute,
         arguments: {"id": id, "title": title});
   }
 
