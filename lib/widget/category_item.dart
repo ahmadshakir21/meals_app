@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meals_app/category_meals_screen.dart';
+import 'package:meals_app/screen/category_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
   final String id;
