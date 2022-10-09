@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meals_app/screen/category_meals_screen.dart';
 import 'package:meals_app/screen/category_screen.dart';
+import 'package:meals_app/screen/meal_detail_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const CategoryScreen(),
-        CategoryMealsScreen.namedRoute: (context) => CategoryMealsScreen()
+        CategoryMealsScreen.namedRoute: (context) => CategoryMealsScreen(),
+        MealDetailScreen.routeName: (context) => MealDetailScreen(),
       },
     );
   }
